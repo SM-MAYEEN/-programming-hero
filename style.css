@@ -7,12 +7,12 @@
     --hover-blue: #f2ea10; /* Darker blue for hover */
     --text-dark: #212529; /* Darkest text */
     --text-medium: #45525f; /* General paragraph text */
-    --text-light: #6c757d; /* Lighter grey text */
-    --bg-white: #fefeff;
-    --bg-light-blue: #cbe4eb; /* Very light blue for gradient top */
+    --text-light: #1c83dc; /* Lighter grey text */
+    --bg-white: #88e9f1;
+    --bg-light-blue: #a9ef26; /* Very light blue for gradient top */
     --bg-body-gradient: linear-gradient(180deg, var(--bg-light-blue) 0%, #e6edeb 100%); /* Body background */
-    --card-shadow: 0 4px 10px rgba(181, 210, 214, 0.05);
-    --border-light: #e9ecef; /* Light border color */
+    --card-shadow: 0 4px 10px rgba(46, 205, 226, 0.05);
+    --border-light: #e5561d; /* Light border color */
     --red-youtube: #ff0000;
     --youtube-overlay: rgba(0, 0, 0, 0.7);
     --footer-bg: #cad9e9; /* Dark footer background */
