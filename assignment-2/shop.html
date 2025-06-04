@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Nature's Platter</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body  class="font-sans">
+    <header style="background-color: beige;" class="bg-white py-4 shadow-sm">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <div class="flex items-center">
+                <img src="assets/logo-green.png" alt="Nature's Platter Logo" class="h-10 mr-2">
+            </div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-gray-700 hover:text-green-600">Home</a>
+                <a href="shop.html" class="text-green-600 font-bold">Shop</a> <a href="about.html" class="text-gray-700 hover:text-green-600">About Us</a>
+                <a href="contact.html" class="text-gray-700 hover:text-green-600">Contact</a>
+            </nav>
+            <div style="background-color: beige;" class="flex items-center space-x-4">
+                <button id="mobile-menu-button" class="md:hidden text-gray-700 hover:text-green-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+                <button id="search-button" class="text-gray-700 hover:text-green-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </button>
+                <button class="text-gray-700 hover:text-green-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 4a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                </button>
+                <a href="login.html" class="border border-green-500 text-green-700 px-4 py-2 rounded hover:bg-green-500 hover:text-white transition-colors duration-200">Login</a>
+                <a href="register.html" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition-colors duration-200">Register</a>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-2 shadow-md">
+            <a href="index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Home</a>
+            <a href="shop.html" class="block px-4 py-2 text-green-600 hover:bg-gray-100 font-bold">Shop</a>
+            <a href="about.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">About Us</a>
+            <a href="contact.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <section  class="py-12 md:py-16 bg-gray-50">
+            <div class="container mx-auto px-4 text-center">
+                <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Our Fresh Produce</h1>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Explore our wide selection of farm-fresh fruits, vegetables, and pantry essentials. Quality guaranteed!</p>
+            </div>
+        </section>
+
+        <section style="background-color: beige;" class="all-products py-12 md:py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-2xl md:text-3xl font-bold text-green-600 text-left mb-8">All Products</h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+                    <div class="product-card bg-white p-4 rounded-lg shadow-sm flex flex-col items-center text-center">
+                        <div class="mb-2">
+                            <img src="assets/product-onion.png" alt="Onion" class="w-20 h-20 object-contain">
+                        </div>
+                        <div class="flex items-center text-yellow-500 text-sm mb-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.8-2.034a1 1 0 00-1.176 0l-2.8 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.381-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z" />
+                            </svg>
+                            <span>4.8</span>
+                        </div>
+                        <h4 class="text-md font-semibold text-gray-800 product-name">Fresh Carrots 500g</h4>
+                        <p class="text-lg font-bold text-gray-800 product-price">$2.50</p>
+                        <button class="bg-green-500 text-white px-3 py-1 rounded text-sm hover:bg-green-600 add-to-cart-btn">Add to Cart</button>
+                    </div>
+
+                    <div class="product-card bg-white p-4 rounded-lg shadow-sm flex flex-col items-center text-center">
+                        <div class="mb-2">
+                            <img src="assets/product-potato.png" alt="Potato" class="w-20 h-20 object-contain">
+                        </div>
+                        <div class="flex items-center text-yellow-500 text-sm mb-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.8-2.034a1 1 0 00-1.176 0l-2.8 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.381-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z" />
+                            </svg>
+                            <span>4.6</span>
+                        </div>
+                        <h4 class="text-md font-semibold text-gray-800 product-name">Organic Broccoli</h4>
+                        <p class="text-lg font-bold text-gray-800 product-price">$3.75</p>
+                        <button class="bg-green-500 text-white px-3 py-1 rounded text-sm hover:bg-green-600 add-to-cart-btn">Add to Cart</button>
+                    </div>
+
+                    <div class="product-card bg-white p-4 rounded-lg shadow-sm flex flex-col items-center text-center">
+                        <div class="mb-2">
+                            <img src="assets/apple.png" alt="Apple" class="w-20 h-20 object-contain">
+                        </div>
+                        <div class="flex items-center text-yellow-500 text-sm mb-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.8-2.034a1 1 0 00-1.176 0l-2.8 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.381-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z" />
+                            </svg>
+                            <span>4.9</span>
+                        </div>
+                        <h4 class="text-md font-semibold text-gray-800 product-name">Red Apples 1KG</h4>
+                        <p class="text-lg font-bold text-gray-800 product-price">$4.99</p>
+                        <button class="bg-green-500 text-white px-3 py-1 rounded text-sm hover:bg-green-600 add-to-cart-btn">Add to Cart</button>
+                    </div>
+                     <div class="product-card bg-white p-4 rounded-lg shadow-sm flex flex-col items-center text-center">
+                        <div class="mb-2">
+                            <img src="assets/product-onion.png" alt="Onion" class="w-20 h-20 object-contain">
+                        </div>
+                        <div class="flex items-center text-yellow-500 text-sm mb-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.8-2.034a1 1 0 00-1.176 0l-2.8 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.381-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z" />
+                            </svg>
+                            <span>4.5</span>
+                        </div>
+                        <h4 class="text-md font-semibold text-gray-800 product-name">Onion 1 KG</h4>
+                        <p class="text-lg font-bold text-gray-800 product-price">$3.99</p>
+                        <button class="bg-green-500 text-white px-3 py-1 rounded text-sm hover:bg-green-600 add-to-cart-btn">Add to Cart</button>
+                    </div>
+
+                    <div class="product-card bg-white p-4 rounded-lg shadow-sm flex flex-col items-center text-center">
+                        <div class="mb-2">
+                            <img src="assets/product-tomato.png" alt="Tomato" class="w-20 h-20 object-contain">
+                        </div>
+                        <div class="flex items-center text-yellow-500 text-sm mb-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.8-2.034a1 1 0 00-1.176 0l-2.8 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.381-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z" />
+                            </svg>
+                            <span>4.5</span>
+                        </div>
+                        <h4 class="text-md font-semibold text-gray-800 product-name">Tomato 500 g</h4>
+                        <p class="text-lg font-bold text-gray-800 product-price">$1.99</p>
+                        <button class="bg-green-500 text-white px-3 py-1 rounded text-sm hover:bg-green-600 add-to-cart-btn">Add to Cart</button>
+                    </div>
+
+                    <div class="product-card bg-white p-4 rounded-lg shadow-sm flex flex-col items-center text-center">
+                        <div class="mb-2">
+                            <img src="assets/product-potato.png" alt="Potato" class="w-20 h-20 object-contain">
+                        </div>
+                        <div class="flex items-center text-yellow-500 text-sm mb-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.8-2.034a1 1 0 00-1.176 0l-2.8 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.381-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z" />
+                            </svg>
+                            <span>4.5</span>
+                        </div>
+                        <h4 class="text-md font-semibold text-gray-800 product-name">Potato 1 KG</h4>
+                        <p class="text-lg font-bold text-gray-800 product-price">$2.20</p>
+                        <button class="bg-green-500 text-white px-3 py-1 rounded text-sm hover:bg-green-600 add-to-cart-btn">Add to Cart</button>
+                    </div>
+
+                    <div class="product-card bg-white p-4 rounded-lg shadow-sm flex flex-col items-center text-center">
+                        <div class="mb-2">
+                            <img src="assets/banana-48 .png" alt="Banana" class="w-20 h-20 object-contain">
+                        </div>
+                        <div class="flex items-center text-yellow-500 text-sm mb-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.8-2.034a1 1 0 00-1.176 0l-2.8 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.381-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z" />
+                            </svg>
+                            <span>4.5</span>
+                        </div>
+                        <h4 class="text-md font-semibold text-gray-800 product-name">Bananas (Bunch)</h4>
+                        <p class="text-lg font-bold text-gray-800 product-price">$1.50</p>
+                        <button class="bg-green-500 text-white px-3 py-1 rounded text-sm hover:bg-green-600 add-to-cart-btn">Add to Cart</button>
+                    </div>
+                    </div>
+                <div class="text-center mt-12">
+                    <button class="bg-green-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-green-700 transition-colors duration-200">Load More Products</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-green-800 text-white py-8 mt-12">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <div class="flex items-center mb-4">
+                    <img src="assets/logo-white.png" alt="Nature's Platter Logo" class="h-8 mr-2">
+                </div>
+                <p class="text-gray-300">Discover a world of treats, toys, and essentials handpicked for your furry friends.</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4">Product</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-300 hover:text-white text-sm">Services</a></li>
+                    <li><a href="#" class="text-gray-300 hover:text-white text-sm">Contact us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                <div class="flex space-x-4">
+                    <a target="_blank" href="https://www.facebook.com/md.mayeenuddin.102">
+                        <img src="assets/facebook.png" alt="Facebook Icon" class="h-6 w-6">
+                    </a>
+                    <a target="_blank" href="https://github.com/SM-MAYEEN">
+                        <img src="assets/github.png" alt="Github Icon" class="h-6 w-6">
+                    </a>
+                    <a target="_blank" href="https://www.linkedin.com/in/sm-mayeen/">
+                        <img src="assets/linkedin.png" alt="LinkedIn Icon" class="h-6 w-6">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center text-gray-400 mt-8 border-t border-gray-700 pt-4">
+            &copy; 2025 Nature's Platter. All rights reserved.
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

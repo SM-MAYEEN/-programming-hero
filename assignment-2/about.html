@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Nature's Platter</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-sans">
+    <header class="bg-white py-4 shadow-sm">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <div class="flex items-center">
+                <img src="assets/logo-green.png" alt="Nature's Platter Logo" class="h-10 mr-2">
+            </div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-gray-700 hover:text-green-600">Home</a>
+                <a href="shop.html" class="text-gray-700 hover:text-green-600">Shop</a>
+                <a href="about.html" class="text-green-600 font-bold">About Us</a> <a href="contact.html" class="text-gray-700 hover:text-green-600">Contact</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <button id="mobile-menu-button" class="md:hidden text-gray-700 hover:text-green-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+                <button id="search-button" class="text-gray-700 hover:text-green-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </button>
+                <button class="text-gray-700 hover:text-green-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 4a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                </button>
+                <a href="login.html" class="border border-green-500 text-green-700 px-4 py-2 rounded hover:bg-green-500 hover:text-white transition-colors duration-200">Login</a>
+                <a href="register.html" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition-colors duration-200">Register</a>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-2 shadow-md">
+            <a href="index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Home</a>
+            <a href="shop.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Shop</a>
+            <a href="about.html" class="block px-4 py-2 text-green-600 hover:bg-gray-100 font-bold">About Us</a>
+            <a href="contact.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="py-12 md:py-16 bg-gray-50">
+            <div class="container mx-auto px-4 text-center">
+                <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">About Nature's Platter</h1>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Committed to delivering farm-fresh produce directly to your doorstep, we believe in healthy living and sustainable practices.</p>
+            </div>
+        </section>
+
+        <section class="our-story py-12 md:py-16 bg-white">
+            <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="order-2 md:order-1">
+                    <h2 class="text-2xl md:text-3xl font-bold text-green-600 mb-4">Our Story</h2>
+                    <p class="text-gray-700 mb-4">
+                        Nature's Platter was founded in 20XX with a simple mission: to connect local farmers with urban consumers, ensuring everyone has access to fresh, healthy, and sustainably grown food. We started as a small initiative, driven by a passion for quality produce and a desire to support our community.
+                    </p>
+                    <p class="text-gray-700">
+                        Over the years, we've grown, but our commitment remains the same. We meticulously source our products, prioritizing organic and ethically farmed goods. Every item on Nature's Platter is a testament to our dedication to freshness, quality, and your well-being.
+                    </p>
+                </div>
+                <div class="order-1 md:order-2 flex justify-center">
+                    <img src="assets/about-story.jpg" alt="Our Story Image - Fresh Harvest" class="rounded-lg shadow-lg max-w-full h-auto md:max-h-96 object-cover">
+                </div>
+            </div>
+        </section>
+
+        <section class="our-mission py-12 md:py-16 bg-gray-100">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-2xl md:text-3xl font-bold text-green-600 mb-6">Our Mission & Values</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="p-6 bg-white rounded-lg shadow-md">
+                        <img src="assets/healthy-100.png" alt="Quality Icon" class="w-16 h-16 mx-auto mb-4">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Quality First</h3>
+                        <p class="text-gray-600">We ensure every product meets the highest standards of freshness and nutritional value.</p>
+                    </div>
+                    <div class="p-6 bg-white rounded-lg shadow-md">
+                        <img src="assets/sustainable.png" alt="Sustainability Icon" class="w-16 h-16 mx-auto mb-4">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Sustainability</h3>
+                        <p class="text-gray-600">Committed to eco-friendly practices that support our planet and future generations.</p>
+                    </div>
+                    <div class="p-6 bg-white rounded-lg shadow-md">
+                        <img src="assets/community.png" alt="Community Icon" class="w-16 h-16 mx-auto mb-4">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Community Support</h3>
+                        <p class="text-gray-600">Building strong relationships with local farmers and supporting their livelihoods.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        </main>
+
+    <footer class="bg-green-800 text-white py-8 mt-12">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <div class="flex items-center mb-4">
+                    <img src="assets/logo-white.png" alt="Nature's Platter Logo" class="h-8 mr-2">
+                </div>
+                <p class="text-gray-300">Discover a world of treats, toys, and essentials handpicked for your furry friends.</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4">Product</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-300 hover:text-white text-sm">Services</a></li>
+                    <li><a href="#" class="text-gray-300 hover:text-white text-sm">Contact us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                <div class="flex space-x-4">
+                    <a target="_blank" href="https://www.facebook.com/md.mayeenuddin.102">
+                        <img src="assets/facebook.png" alt="Facebook Icon" class="h-6 w-6">
+                    </a>
+                    <a target="_blank" href="https://github.com/SM-MAYEEN">
+                        <img src="assets/github.png" alt="Github Icon" class="h-6 w-6">
+                    </a>
+                    <a target="_blank" href="https://www.linkedin.com/in/sm-mayeen/">
+                        <img src="assets/linkedin.png" alt="LinkedIn Icon" class="h-6 w-6">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center text-gray-400 mt-8 border-t border-gray-700 pt-4">
+            &copy; 2025 Nature's Platter. All rights reserved.
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

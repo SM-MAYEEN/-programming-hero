@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature's Platter</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body  class="font-sans">
+    <header class="bg-white py-4 shadow-sm">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <div class="flex items-center">
+                <img src="assets/logo-green.png" alt="assets/" class="h-10 mr-2">
+                <!-- <span class="text-green-600 font-bold text-xl">Nature's Platter</span> -->
+            </div>
+           <nav class="hidden md:flex space-x-6">
+    <a href="index.html" class="text-gray-700 hover:text-green-600">Home</a>
+    <a href="shop.html" class="text-gray-700 hover:text-green-600">Shop</a>
+    <a href="about.html" class="text-gray-700 hover:text-green-600">About Us</a>
+    <a href="contact.html" class="text-gray-700 hover:text-green-600">Contact</a>
+</nav>
+<div id="mobile-menu" class="hidden md:hidden bg-white py-2 shadow-md">
+    <a href="index.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Home</a>
+    <!-- <a href="shop.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Shop</a>
+    <a href="about.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">About Us</a>
+    <a href="contact.html" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Contact</a> -->
+</div>
+            <div class="flex items-center space-x-4">
+    <button id="search-button" class="text-gray-700 hover:text-green-600">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+    </svg>
+</button>
+
+    <button class="text-gray-700 hover:text-green-600">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 4a2 2 0 11-4 0 2 2 0 014 0z" />
+        </svg>
+    </button>
+
+    <a href="login.html" class="border border-green-500 text-green-700 px-4 py-2 rounded hover:bg-green-500 hover:text-white transition-colors duration-200">Login</a>
+
+    <a href="register.html" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition-colors duration-200">Register</a>
+</div>
+        </div>
+        <div  id="mobile-menu" class="hidden md:hidden bg-white py-2 shadow-md">
+            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Home</a>
+            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Shop</a>
+            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">About Us</a>
+            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Contact</a>
+        </div>
+    </header>
+
+    <main >
+        <section style="background-color: beige;" class="hero bg-gray-100 text-center py-16 md:py-24">
+            <div class="container mx-auto px-4">
+                <h1 class="text-3xl md:text-5xl font-bold text-gray-800 leading-tight mb-4">Freshness You Can Count On, Prices You'll Love!</h1>
+                <p class="text-lg md:text-xl text-gray-600 mb-8">Your daily dose of farm-fresh goodness delivered right to your door.</p>
+                <div class="relative w-full max-w-2xl mx-auto">
+                    <img     src="assets/hero-img.png" alt="Fresh Vegetables"  >
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="services py-12 md:py-16 bg-white">
+    <div class="container mx-auto px-4">
+        <div style="color: lime;"> <b>Services</b> </div><br>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div style="background-color: antiquewhite;" class="service-card text-center p-6 bg-gray-50 rounded-lg shadow-md">
+                <div class="flex justify-center items-center mb-4">
+                    <img src="assets/support.png" alt="24/7 Services Icon" class="w-20 h-20">
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">24/7 Services</h3>
+                <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+            </div>
+
+            <div style="background-color: antiquewhite;" class="service-card text-center p-6 bg-gray-50 rounded-lg shadow-md">
+                <div class="flex justify-center items-center mb-4">
+                    <img src="assets/fast-delivery.png" alt="Fast Delivery Icon" class="w-20 h-20">
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Fast Delivery</h3>
+                <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+            </div>
+
+            <div style="background-color: antiquewhite;" class="service-card text-center p-6 bg-gray-50 rounded-lg shadow-md">
+                <div class="flex justify-center items-center mb-4">
+                    <img src="assets/healthy-100.png" alt="Healthy Products Icon" class="w-20 h-20">
+                </div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-2">Healthy Products</h3>
+                <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+            </div>
+        </div>
+    </div><br><br><br><br>
+ 
+<section style="background-color: beige;" class="popular-products py-12 md:py-16 bg-gray-100">
+    <div class="container mx-auto px-4">
+        <h2 style="color: lime;" class="text-2xl md:text-3xl font-bold text-green-300 text-left mb-8">Popular Products</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+            <div class="product-card bg-white p-4 rounded-lg shadow-sm flex flex-col items-center text-center">
+                <div class="mb-2">
+                    <img src="assets/product-onion.png" alt="Onion" class="w-20 h-20 object-contain">
+                </div>
+                <div class="flex items-center text-yellow-500 text-sm mb-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.8-2.034a1 1 0 00-1.176 0l-2.8 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.381-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z" />
+                    </svg>
+                    <span>4.5</span>
+                </div>
+                <h4 class="text-md font-semibold text-gray-800">Onion 1 KG</h4>
+                <p class="text-lg font-bold text-gray-800">$39.99</p>
+                <button class="bg-green-500 text-white px-3 py-1 rounded text-sm hover:bg-green-600">Add to Cart</button>
+            </div>
+
+            <div class="product-card bg-white p-4 rounded-lg shadow-sm flex flex-col items-center text-center">
+                <div class="mb-2">
+                    <img src="assets/product-tomato.png" alt="Tomato" class="w-20 h-20 object-contain">
+                </div>
+                <div class="flex items-center text-yellow-500 text-sm mb-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.8-2.034a1 1 0 00-1.176 0l-2.8 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.381-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z" />
+                    </svg>
+                    <span>4.5</span>
+                </div>
+                <h4 class="text-md font-semibold text-gray-800">Tomato 500 g</h4>
+                <p class="text-lg font-bold text-gray-800">$39.99</p>
+                <button class="bg-green-500 text-white px-3 py-1 rounded text-sm hover:bg-green-600">Add to Cart</button>
+            </div>
+
+            <div class="product-card bg-white p-4 rounded-lg shadow-sm flex flex-col items-center text-center">
+                <div class="mb-2">
+                    <img src="assets/product-potato.png" alt="Potato" class="w-20 h-20 object-contain">
+                </div>
+                <div class="flex items-center text-yellow-500 text-sm mb-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.8-2.034a1 1 0 00-1.176 0l-2.8 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.381-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z" />
+                    </svg>
+                    <span>4.5</span>
+                </div>
+                <h4 class="text-md font-semibold text-gray-800">Potato 1 KG</h4>
+                <p class="text-lg font-bold text-gray-800">$39.99</p>
+                <button class="bg-green-500 text-white px-3 py-1 rounded text-sm hover:bg-green-600">Add to Cart</button>
+            </div>
+
+            <div class="product-card bg-white p-4 rounded-lg shadow-sm flex flex-col items-center text-center">
+                <div class="mb-2">
+                    <img src="assets/banana-48 .png" alt="Banana" class="w-20 h-20 object-contain">
+                </div>
+                <div class="flex items-center text-yellow-500 text-sm mb-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.8-2.034a1 1 0 00-1.176 0l-2.8 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.381-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z" />
+                    </svg>
+                    <span>4.5</span>
+                </div>
+                <h4 class="text-md font-semibold text-gray-800">Tomato 500 g</h4>
+                <p class="text-lg font-bold text-gray-800">$39.99</p>
+                <button class="bg-green-500 text-white px-3 py-1 rounded text-sm hover:bg-green-600">Add to Cart</button>
+            </div>
+
+            <div class="product-card bg-white p-4 rounded-lg shadow-sm flex flex-col items-center text-center">
+                <div class="mb-2">
+                    <img src="assets/product-onion.png" alt="Onion" class="w-20 h-20 object-contain">
+                </div>
+                <div class="flex items-center text-yellow-500 text-sm mb-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.8-2.034a1 1 0 00-1.176 0l-2.8 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.381-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z" />
+                    </svg>
+                    <span>4.5</span>
+                </div>
+                <h4 class="text-md font-semibold text-gray-800">Onion 1 KG</h4>
+                <p class="text-lg font-bold text-gray-800">$39.99</p>
+                <button class="bg-green-500 text-white px-3 py-1 rounded text-sm hover:bg-green-600">Add to Cart</button>
+            </div>
+
+            <div class="product-card bg-white p-4 rounded-lg shadow-sm flex flex-col items-center text-center">
+                <div class="mb-2">
+                    <img src="assets/apple.png" alt="apple" class="w-20 h-20 object-contain">
+                </div>
+                <div class="flex items-center text-yellow-500 text-sm mb-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.8-2.034a1 1 0 00-1.176 0l-2.8 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.381-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z" />
+                    </svg>
+                    <span>4.5</span>
+                </div>
+                <h4 class="text-md font-semibold text-gray-800">Tomato 500 g</h4>
+                <p class="text-lg font-bold text-gray-800">$39.99</p>
+                <button class="bg-green-500 text-white px-3 py-1 rounded text-sm hover:bg-green-600">Add to Cart</button>
+            </div>
+
+            <div class="product-card bg-white p-4 rounded-lg shadow-sm flex flex-col items-center text-center">
+                <div class="mb-2">
+                    <img src="assets/product-tomato.png" alt="Tomato" class="w-20 h-20 object-contain">
+                </div>
+                <div class="flex items-center text-yellow-500 text-sm mb-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.8-2.034a1 1 0 00-1.176 0l-2.8 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.381-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z" />
+                    </svg>
+                    <span>4.5</span>
+                </div>
+                <h4 class="text-md font-semibold text-gray-800">Onion 1 KG</h4>
+                <p class="text-lg font-bold text-gray-800">$39.99</p>
+                <button class="bg-green-500 text-white px-3 py-1 rounded text-sm hover:bg-green-600">Add to Cart</button>
+            </div>
+
+            <div class="product-card bg-white p-4 rounded-lg shadow-sm flex flex-col items-center text-center">
+                <div class="mb-2">
+                    <img src="assets/apple.png" alt="apple" class="w-20 h-20 object-contain">
+                </div>
+                <div class="flex items-center text-yellow-500 text-sm mb-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.8-2.034a1 1 0 00-1.176 0l-2.8 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.381-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z" />
+                    </svg>
+                    <span>4.5</span>
+                </div>
+                <h4 class="text-md font-semibold text-gray-800">Potato 1 KG</h4>
+                <p class="text-lg font-bold text-gray-800">$39.99</p>
+                <button class="bg-green-500 text-white px-3 py-1 rounded text-sm hover:bg-green-600">Add to Cart</button>
+            </div>
+
+            <div class="product-card bg-white p-4 rounded-lg shadow-sm flex flex-col items-center text-center">
+                <div class="mb-2">
+                    <img src="assets/product-potato.png" alt="Potato" class="w-20 h-20 object-contain">
+                </div>
+                <div class="flex items-center text-yellow-500 text-sm mb-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.8-2.034a1 1 0 00-1.176 0l-2.8 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.381-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z" />
+                    </svg>
+                    <span>4.5</span>
+                </div>
+                <h4 class="text-md font-semibold text-gray-800">Potato 1 KG</h4>
+                <p class="text-lg font-bold text-gray-800">$39.99</p>
+                <button class="bg-green-500 text-white px-3 py-1 rounded text-sm hover:bg-green-600">Add to Cart</button>
+            </div>
+
+            <div class="product-card bg-white p-4 rounded-lg shadow-sm flex flex-col items-center text-center">
+                <div class="mb-2">
+                    <img src="assets/banana-48 .png" alt="Banana" class="w-20 h-20 object-contain">
+                </div>
+                <div class="flex items-center text-yellow-500 text-sm mb-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.8-2.034a1 1 0 00-1.176 0l-2.8 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.381-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z" />
+                    </svg>
+                    <span>4.5</span>
+                </div>
+                <h4 class="text-md font-semibold text-gray-800">Potato 1 KG</h4>
+                <p class="text-lg font-bold text-gray-800">$39.99</p>
+                <button class="bg-green-500 text-white px-3 py-1 rounded text-sm hover:bg-green-600">Add to Cart</button>
+            </div>
+
+            <div class="product-card bg-white p-4 rounded-lg shadow-sm flex flex-col items-center text-center">
+                <div class="mb-2">
+                    <img src="assets/product-tomato.png" alt="Tomato" class="w-20 h-20 object-contain">
+                </div>
+                <div class="flex items-center text-yellow-500 text-sm mb-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.8-2.034a1 1 0 00-1.176 0l-2.8 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.381-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z" />
+                    </svg>
+                    <span>4.5</span>
+                </div>
+                <h4 class="text-md font-semibold text-gray-800">Potato 1 KG</h4>
+                <p class="text-lg font-bold text-gray-800">$39.99</p>
+                <button class="bg-green-500 text-white px-3 py-1 rounded text-sm hover:bg-green-600">Add to Cart</button>
+            </div>
+
+            <div class="product-card bg-white p-4 rounded-lg shadow-sm flex flex-col items-center text-center">
+                <div class="mb-2">
+                    <img src="assets/banana-48 .png" alt="Banana" class="w-20 h-20 object-contain">
+                </div>
+                <div class="flex items-center text-yellow-500 text-sm mb-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.8-2.034a1 1 0 00-1.176 0l-2.8 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.381-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z" />
+                    </svg>
+                    <span>4.5</span>
+                </div>
+                <h4 class="text-md font-semibold text-gray-800">Potato 1 KG</h4>
+                <p class="text-lg font-bold text-gray-800">$39.99</p>
+                <button class="bg-green-500 text-white px-3 py-1 rounded text-sm hover:bg-green-600">Add to Cart</button>
+            </div>
+        </div>
+    </div><br><br></main>
+<section  class="arrival-offers py-12 md:py-16 bg-white">
+    <div class="container mx-auto px-4">
+        <h2 class="text-2xl md:text-3xl font-bold text-green-600 text-left mb-8">Arrival & Offers</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="offer-card bg-green-900 text-white p-6 rounded-lg shadow-md flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 mb-4 md:mb-0 text-center md:text-left">
+                    <div >
+                    <img src="assets/dawat-logo.png" alt="DAAWAT Biryani Basmati Rice" class="w-36 h-36 object-contain">
+                </div>
+                    <p class="bg-green-600 text-white px-6 py-2 rounded-full font-semibold mb-4 inline-block">Cook Exotic Dishes</p>                    <p class="text-lg mb-4">Up to <span class="text-yellow-300 font-bold">20% OFF</span></p>
+                    <button class="bg-white text-green-700 px-6 py-2 rounded-full font-semibold hover:bg-gray-100 transition-colors duration-200">Shop Now</button>
+                </div>
+                <div class="md:w-1/2 flex justify-center md:justify-end">
+                    <img src="assets/product-dawat.png" alt="DAAWAT Biryani Basmati Rice"  >
+                </div>
+            </div>
+
+            <div class="offer-card bg-blue-900 text-white p-6 rounded-lg shadow-md flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 mb-4 md:mb-0 text-center md:text-left">
+                    <div >
+                    <img src="assets/indiagate-logo.png" alt="INDIA GATE Basmati Rice" class="w-36 h-36 object-contain">
+                </div>
+                <p class="bg-green-600 text-white px-6 py-2 rounded-full font-semibold mb-4 inline-block">World's No.1 Rice</p>
+                    <h3 class="text-2xl font-bold mb-2">World's No.1 Rice</h3>
+                    <p class="text-lg mb-4">Up to <span class="text-yellow-300 font-bold">40% OFF</span></p>
+                    <button class="bg-white text-blue-700 px-6 py-2 rounded-full font-semibold hover:bg-gray-100 transition-colors duration-200">Shop Now</button>
+                </div>
+                <div class="md:w-1/2 flex justify-center md:justify-end">
+                    <img src="assets/product-indiagate.png" alt="INDIA GATE Basmati Rice" >
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- </section>
+         <section class="newsletter py-12 md:py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="bg-gray-100 p-8 rounded-lg shadow-inner flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-12">
+                    <div class="md:w-1/3 flex justify-center">
+                        <img src="assets/fruit-basket.png" alt="Grocery Basket" class="w-64 h-64 object-contain">
+                    </div>
+                    <div class="md:w-2/3 text-center md:text-left">
+                        <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">Get Grocery News!</h2>
+                        <p class="text-gray-600 mb-6">Exclusive training tips, ticks, product deals and more.</p>
+                        <div class="flex flex-col sm:flex-row justify-center md:justify-start items-center space-y-4 sm:space-y-0 sm:space-x-4">
+                            <input type="email" placeholder="Enter email..." class="p-3 rounded-md border border-gray-300 w-full sm:w-80 focus:outline-none focus:ring-2 focus:ring-green-500">
+                            <button class="bg-green-600 text-white px-6 py-3 rounded-md hover:bg-green-700 w-full sm:w-auto">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+      <section  class="newsletter py-12 md:py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <div style="background-color: beige;" class="p-8 rounded-lg shadow-inner flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-12">
+                    <div class="md:w-1/3 flex justify-center">
+                        <img src="assets/fruit-basket.png" alt="Grocery Basket" class="w-64 h-64 object-contain">
+                    </div>
+                    <div class="md:w-2/3 text-center md:text-left">
+                        <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">Get Grocery News!</h2>
+                        <p class="text-gray-600 mb-6">Exclusive training tips, ticks, product deals and more.</p>
+                        <div class="flex flex-col sm:flex-row justify-center md:justify-start items-center space-y-4 sm:space-y-0 sm:space-x-4">
+                            <input type="email" placeholder="Enter email..." class="p-3 rounded-md border border-gray-300 w-full sm:w-80 focus:outline-none focus:ring-2 focus:ring-green-500">
+                            <button class="bg-green-600 text-white px-6 py-3 rounded-md hover:bg-green-700 w-full sm:w-auto">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> 
+
+    
+<footer class="bg-green-800 text-white py-8 mt-12">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <div class="flex items-center mb-4">
+                    <img src="assets/logo-white.png" alt="Nature's Platter Logo" class="h-8 mr-2">
+                 </div>
+                <p>Discover a world of treats, toys,and</p>
+                <p>essentials handpicked for your furry</p>
+                <p>friends</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4">Product</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-300 hover:text-white text-sm">Services</a></li>
+                    <li><a href="#" class="text-gray-300 hover:text-white text-sm">Contact us</a></li>
+                </ul>
+            </div>
+            
+           <div class="social-links"><h3> <b>Contact Us</b></h3>
+            <a target="_blank" href="https://www.facebook.com/md.mayeenuddin.102"><img src="assets/facebook.png"
+                    alt="Facebook Icon" class="card-icon"> </a><br>
+            <a target="_blank" href="https://github.com/SM-MAYEEN"><img src="assets/github.png" alt="Github Icon"
+                    class="card-icon"></a><br>
+            <a target="_blank" href="https://www.linkedin.com/in/sm-mayeen/"><img src="assets/linkedin.png"
+                    alt="linkedin Icon" class="card-icon">
+                </i></a>
+        </div>
+        </div>
+        <div class="text-center text-gray-400 mt-8 border-t border-gray-700 pt-4">
+            &copy; 2025 Nature's Platter. All rights reserved.
+        </div>
+    </footer>
+ <!-- <div>
+                <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                <p class="text-gray-300">123 Green Street, Food City, FC 12345</p>
+                <p class="text-gray-300">Email: info@naturesplatter.com</p>
+                <p class="text-gray-300">Phone: +1 234 567 8900</p>
+            </div> -->
+    <script src="main.js"></script>
+</body>
+</html>

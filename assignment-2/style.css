@@ -1,0 +1,12 @@
+/* style.css (optional for custom styles not handled by Tailwind) */
+
+/* Example: If you wanted a custom font that isn't in Tailwind's default */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); */
+/* body { font-family: 'Roboto', sans-serif; } */
+
+/* Basic overrides or custom components if needed */
+.container {
+    max-width: 1200px; /* Example of overriding Tailwind's default container max-width */
+}
+
+/* Any specific non-Tailwind related styles can go here */
